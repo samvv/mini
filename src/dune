@@ -1,0 +1,10 @@
+(executable
+  (name mini)
+  (public_name mini)
+  (flags (:standard -warn-error -A))
+  (libraries str))
+(ocamllex miniLexer)
+(ocamlyacc miniParser)
+(ocamllex constraintLexer)
+(ocamlyacc constraintParser)
+(documentation)
