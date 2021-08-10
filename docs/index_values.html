@@ -1,0 +1,1061 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="PrettyPrinter" rel="Chapter" href="PrettyPrinter.html">
+<link title="InfiniteArray" rel="Chapter" href="InfiniteArray.html">
+<link title="Misc" rel="Chapter" href="Misc.html">
+<link title="Env" rel="Chapter" href="Env.html">
+<link title="Positions" rel="Chapter" href="Positions.html">
+<link title="Mark" rel="Chapter" href="Mark.html">
+<link title="UnionFind" rel="Chapter" href="UnionFind.html">
+<link title="AstPositions" rel="Chapter" href="AstPositions.html">
+<link title="Processing" rel="Chapter" href="Processing.html">
+<link title="ParsingExceptions" rel="Chapter" href="ParsingExceptions.html">
+<link title="BasicSetEquations" rel="Chapter" href="BasicSetEquations.html">
+<link title="IntRank" rel="Chapter" href="IntRank.html">
+<link title="CoreAlgebra" rel="Chapter" href="CoreAlgebra.html">
+<link title="MultiEquation" rel="Chapter" href="MultiEquation.html">
+<link title="Unifier" rel="Chapter" href="Unifier.html">
+<link title="Constraint" rel="Chapter" href="Constraint.html">
+<link title="Solver" rel="Chapter" href="Solver.html">
+<link title="MiniAst" rel="Chapter" href="MiniAst.html">
+<link title="MiniAlgebra" rel="Chapter" href="MiniAlgebra.html">
+<link title="Print" rel="Chapter" href="Print.html">
+<link title="ConstraintPrettyPrinter" rel="Chapter" href="ConstraintPrettyPrinter.html">
+<link title="MiniTypingExceptions" rel="Chapter" href="MiniTypingExceptions.html">
+<link title="MiniPrettyPrinter" rel="Chapter" href="MiniPrettyPrinter.html">
+<link title="MiniKindInferencer" rel="Chapter" href="MiniKindInferencer.html">
+<link title="MiniTypingEnvironment" rel="Chapter" href="MiniTypingEnvironment.html">
+<link title="MiniTypes" rel="Chapter" href="MiniTypes.html">
+<link title="MiniInfer" rel="Chapter" href="MiniInfer.html">
+<link title="MiniSyntacticAnalysis" rel="Chapter" href="MiniSyntacticAnalysis.html">
+<link title="MiniConstraintPrinter" rel="Chapter" href="MiniConstraintPrinter.html">
+<link title="MiniSolver" rel="Chapter" href="MiniSolver.html">
+<link title="Errors" rel="Chapter" href="Errors.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><br></td></tr>
+<tr><td><a href="Constraint.html#VAL(<?)">(&lt;?)</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">x &lt;? t</code> is a conjunction constraint.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VAL(=?=)">(=?=)</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">t1 =?= t2</code> is an equality constraint
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VAL(^)">(^)</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">c1 ^ c2</code> is a conjunction constraint.
+</div>
+</td></tr>
+<tr><td align="left"><br>A</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALabs">abs</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">abs env</code> return the type <code class="code">abs</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniPrettyPrinter.html#VALactive_mode">active_mode</a> [<a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a>]</td>
+<td><div class="info">
+Set the active mode.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALadd">add</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">add env k v</code> associates <code class="code">v</code> to <code class="code">k</code> in <code class="code">env</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALadd_data_constructor">add_data_constructor</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Add a data constructor into the environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALadd_type_and_kind_variables">add_type_and_kind_variables</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Merge a environment fragment with an environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALadd_type_constructor">add_type_constructor</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Add a type constructor into the environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALadd_type_variables">add_type_variables</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Add a set of type variables into the environment, associating a
+    name to each.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALapp">app</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">app t ts</code> built the term corresponding to the <code class="code">(...((t t0) t1)... tn)</code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALare_equivalent">are_equivalent</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">are_equivalent v1 v2</code> tests if <code class="code">v1</code> and <code class="code">v2</code> are in the same 
+    multi-equation.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALarg_types">arg_types</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">result_type env t</code> returns the argument types of the type <code class="code">t</code> if
+    <code class="code">t</code> is an arrow type.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALarity">arity</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">arity (t1 <span class="keywordsign">-&gt;</span> ... <span class="keywordsign">-&gt;</span> tn)</code> returns <code class="code">n</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALarrow">arrow</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">arrow env x1 x2</code> builds the internal representation of the 
+    type <code class="code">x1 <span class="keywordsign">-&gt;</span> x2</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALarrow">arrow</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">arrow env t1 t2</code> return the type <code class="code">t1 <span class="keywordsign">-&gt;</span> t2</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALas_fun">as_fun</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">as_fun env</code> provides a view of <code class="code">env</code> as function from names to
+    variable.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALas_kind_env">as_kind_env</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">as_kind env</code> provides a view of <code class="code">env</code> as kind environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALas_symbol">as_symbol</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">as_symbol s</code> maps the string <code class="code">s</code> to a symbol if <code class="code">s</code> is a 
+    valid symbol name.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALassociativity">associativity</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">associativity s</code> returns the associativity of <code class="code">s</code>.
+</div>
+</td></tr>
+<tr><td><a href="Misc.html#VALassocp">assocp</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+If <code class="code">l</code> is a list of pairs of a key and a datum, and if <code class="code">p</code> is a
+    predicate on keys, then <code class="code">assocp p l</code> returns the datum associated
+    with the first key that satisfies <code class="code">p</code> in <code class="code">l</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>B</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALbuiltin_env">builtin_env</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="UnionFind.html#VALchange">change</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">change p d</code> updates the descriptor of <code class="code">p</code> to <code class="code">d</code>.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALchange_arterm_vars">change_arterm_vars</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td></td></tr>
+<tr><td><a href="Positions.html#VALcharacters">characters</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">characters p1 p2</code> returns the character interval 
+    between <code class="code">p1</code> and <code class="code">p2</code> assuming they are located in the same
+    line.
+</div>
+</td></tr>
+<tr><td><a href="MiniKindInferencer.html#VALcheck">check</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+<code class="code">check pos env typ kind </code> verifies that <code class="code">typ</code> can be given the kind 
+    <code class="code">kind</code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALchop">chop</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">chop p t</code> introduces <code class="code">t</code> into <code class="code">p</code> by registering a variable into <code class="code">p</code> 
+    for each node of its tree maintaining its structure using links between
+    these variables.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALchopi">chopi</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">chopi rank term</code> chops a term.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALcolumn">column</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">column p</code> returns the number of characters from the 
+    beginning of the line of the Lexing.position <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.RowLabel.html#VALcompare">compare</a> [<a href="CoreAlgebra.RowLabel.html">CoreAlgebra.RowLabel</a>]</td>
+<td><div class="info">
+<code class="code">compare x y</code> is a total ordering.
+</div>
+</td></tr>
+<tr><td><a href="IntRank.html#VALcompare">compare</a> [<a href="IntRank.html">IntRank</a>]</td>
+<td><div class="info">
+<code class="code">compare x y</code> is a total ordering.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALconcat">concat</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">concat env env'</code> merges the mapping of <code class="code">env</code> and <code class="code">env'</code>
+    preferring the mapping of <code class="code">env</code> if there is a clash.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALconj">conj</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">conj cs</code> builds a conjunction between a list of constraints.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALcpos">cpos</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">cpos lexbuf</code> returns the current position of the lexer.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALcposition">cposition</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">cposition c</code> returns the position related to <code class="code">c</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="Processing.html#VALdebug">debug</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Misc.html#VALdebug">debug</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+A debugging flag.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALdiff">diff</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">diff</code> returns the difference of two sets.
+</div>
+</td></tr>
+<tr><td align="left"><br>E</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALempty">empty</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">empty</code> is the empty set.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALempty">empty</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">empty</code> denotes the constant empty set.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALempty">empty</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">empty</code> is the environment with no binding at all.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALempty_environment">empty_environment</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+The empty environment.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALend_of_position">end_of_position</a> [<a href="Positions.html">Positions</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniSolver.html#VALenvironment_as_list">environment_as_list</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+<code class="code">environment_as_list env</code> converts <code class="code">env</code> into a list.
+</div>
+</td></tr>
+<tr><td><a href="Solver.html#VALenvironment_as_list">environment_as_list</a> [<a href="Solver.html">Solver</a>]</td>
+<td><div class="info">
+<code class="code">environment_as_list env</code> converts <code class="code">env</code> into a list.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALequal">equal</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">equal</code> tells whether two sets are equal.
+</div>
+</td></tr>
+<tr><td><a href="UnionFind.html#VALequivalent">equivalent</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">equivalent point1 point2</code> tells whether <code class="code">point1</code> and <code class="code">point2</code>
+    belong to the same equivalence class.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALex">ex</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">ex qs c</code> returns the constraint <code class="code">exists qs.c</code>.
+</div>
+</td></tr>
+<tr><td><a href="Processing.html#VALexecute">execute</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Constraint.html#VALexists">exists</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">exists f</code> creates a fresh variable <code class="code">x</code> and returns the constraint
+    <code class="code">exists x.(f x)</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALexists3">exists3</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">exists3 f</code> is a shortcut for 
+    <code class="code">exists (<span class="keyword">fun</span> x <span class="keywordsign">-&gt;</span> exists (<span class="keyword">fun</span> y <span class="keywordsign">-&gt;</span> exists (<span class="keyword">fun</span> z <span class="keywordsign">-&gt;</span> f x y z)))</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALexists_list">exists_list</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">exists_list l f</code> associates a fresh variable with every element
+    in the list <code class="code">l</code>, yielding an association list <code class="code">m</code>, and returns
+    the constraint <code class="code">exists m.(f m)</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALexists_set">exists_set</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">exists_set names f</code> associates a fresh variable with every name in
+    the set <code class="code">names</code>, yielding a map <code class="code">m</code> of names to variables, and returns
+    the constraint <code class="code">exists m.(f m)</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALexplicit_or_implicit">explicit_or_implicit</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">explicit_or_implicit p e</code> tests if a definition is annotated or 
+    not and normalizes it such that type constraint can be found
+    at the top of the term.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALexplode">explode</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">explode t</code> converts an arbitrary depth tree into a 1-depth one using
+    variables.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.RowLabel.html#VALexport">export</a> [<a href="CoreAlgebra.RowLabel.html">CoreAlgebra.RowLabel</a>]</td>
+<td><div class="info">
+<code class="code">export i</code> provides access to the inverse of the global mapping,
+	that is, associates a unique identifier with every label.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALextract_type">extract_type</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">extract_type</code> examines an expression and looks for a sufficiently 
+    explicit type annotation.
+</div>
+</td></tr>
+<tr><td align="left"><br>F</td></tr>
+<tr><td><a href="Env.html#VALfilter">filter</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">filter env pred</code> returns the set of values that verify <code class="code">pred</code>.
+</div>
+</td></tr>
+<tr><td><a href="UnionFind.html#VALfind">find</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">find point</code> returns the descriptor associated with <code class="code">point</code>'s
+    equivalence class.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALfl">fl</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">fl qs c</code> returns the constraint <code class="code">forall qs.c</code>.
+</div>
+</td></tr>
+<tr><td><a href="PrettyPrinter.html#VALflush">flush</a> [<a href="PrettyPrinter.html">PrettyPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="CoreAlgebra.html#VALfold">fold</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">fold f term accu</code> folds <code class="code">f</code> over <code class="code">term</code>'s parameters, using
+    <code class="code">accu</code> as initial value.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALfold2">fold2</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">fold2 f term term' accu</code> folds <code class="code">f</code> over <code class="code">term</code>'s parameters, using
+    <code class="code">accu</code> as initial value.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALfold_left">fold_left</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">fold f init env</code> iterates over the mappings of <code class="code">env</code>
+    conveying an accumulator whose value is <code class="code">init</code> initially.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALfold_type_info">fold_type_info</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">fold_type_info</code> folds over the environment focusing on type's
+    information.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALforall_list">forall_list</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">forall_list l f</code> associates a fresh variable with every element
+    in the list <code class="code">l</code>, yielding an association list <code class="code">m</code>, and returns
+    the constraint <code class="code">forall m.(f m)</code>.
+</div>
+</td></tr>
+<tr><td><a href="UnionFind.html#VALfresh">fresh</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">fresh desc</code> creates a fresh point and returns it.
+</div>
+</td></tr>
+<tr><td><a href="Mark.html#VALfresh">fresh</a> [<a href="Mark.html">Mark</a>]</td>
+<td><div class="info">
+<code class="code">fresh()</code> generates a fresh mark, that is, a mark that is guaranteed
+    to be distinct from all existing marks.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALfresh_datacon_scheme">fresh_datacon_scheme</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">fresh_datacon_scheme env dname vs</code> retrieves the type scheme
+    of <code class="code">dname</code> in <code class="code">env</code> and alpha convert it using <code class="code">vs</code> as a set
+    of names to use preferentially when printing.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALfresh_flexible_vars">fresh_flexible_vars</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">fresh_flexible_vars pos env vs</code> returns a list of fresh flexible 
+    variables whose visible names are <code class="code">vs</code> and an environment fragment.
+</div>
+</td></tr>
+<tr><td><a href="MiniKindInferencer.html#VALfresh_kind">fresh_kind</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+<code class="code">fresh_kind</code> returns a fresh kind for a type.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALfresh_rigid_vars">fresh_rigid_vars</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">fresh_flexible_vars pos env vs</code> returns a list of fresh rigid 
+    variables whose visible names are <code class="code">vs</code> and an environment fragment.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALfresh_unnamed_rigid_vars">fresh_unnamed_rigid_vars</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">fresh_flexible_vars pos env</code> returns a list of fresh rigid 
+    variables without visible names and an environment fragment.
+</div>
+</td></tr>
+<tr><td align="left"><br>G</td></tr>
+<tr><td><a href="MiniInfer.html#VALgenerate_constraint">generate_constraint</a> [<a href="MiniInfer.html">MiniInfer</a>]</td>
+<td><div class="info">
+<code class="code">generate_constraint p</code> generates a closed constraint that describes
+    the typing of <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="InfiniteArray.html#VALget">get</a> [<a href="InfiniteArray.html">InfiniteArray</a>]</td>
+<td><div class="info">
+<code class="code">get a i</code> returns the element contained at offset <code class="code">i</code> in the array <code class="code">a</code>.
+</div>
+</td></tr>
+<tr><td><a href="Processing.html#VALget_registered_tasks">get_registered_tasks</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>H</td></tr>
+<tr><td><a href="Errors.html#VALhandle">handle</a> [<a href="Errors.html">Errors</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>I</td></tr>
+<tr><td><a href="CoreAlgebra.RowLabel.html#VALimport">import</a> [<a href="CoreAlgebra.RowLabel.html">CoreAlgebra.RowLabel</a>]</td>
+<td><div class="info">
+<code class="code">import s</code> associates a unique label with the identifier <code class="code">s</code>,
+	possibly extending the global mapping if <code class="code">s</code> was never encountered
+	so far.
+</div>
+</td></tr>
+<tr><td><a href="MiniKindInferencer.html#VALinfer">infer</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+<code class="code">infer env typ</code> infers a kind for <code class="code">typ</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniInfer.html#VALinfer_program">infer_program</a> [<a href="MiniInfer.html">MiniInfer</a>]</td>
+<td><div class="info">
+<code class="code">infer_program p</code> generates a constraint context that describes 
+    program <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALinfix">infix</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">infix s</code> tests if <code class="code">s</code> is infix.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALinhabitants">inhabitants</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">inhabitants p</code> returns the type variables of a pool.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALinit">init</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">init ()</code> returns a fresh pool.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALinit_builtin_env">init_builtin_env</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">init_builtin_env variable_maker</code> uses <code class="code">variable_maker</code> to built
+    a typing environment that maps type constructor names to their arities
+    and their type variables.
+</div>
+</td></tr>
+<tr><td><a href="MiniInfer.html#VALinit_env">init_env</a> [<a href="MiniInfer.html">MiniInfer</a>]</td>
+<td><div class="info">
+<code class="code">init_env ()</code> returns a constraint context that defines the builtins
+    of the source language.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALinstance">instance</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">instance p v</code> returns a valid instance of <code class="code">v</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALinter">inter</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">inter</code> returns the intersection of two sets.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALintern">intern</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">intern env ty</code> converts <code class="code">ty</code> into its internal representation.
+</div>
+</td></tr>
+<tr><td><a href="MiniKindInferencer.html#VALintern_kind">intern_kind</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+<code class="code">intern_kind env kind</code> internalizes a kind in the user-syntax.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALintern_let_env">intern_let_env</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">internal_let_env env fqs rqs</code> internalizes the flexible variables
+    <code class="code">fqs</code> and the rigid variables <code class="code">rqs</code> into <code class="code">env</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALintern_scheme">intern_scheme</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">intern_scheme env x fqs ty</code> returns the internal representation
+    of the type scheme <code class="code">forall fqs.ty</code> and the binding of <code class="code">x</code> to it.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALintroduce">introduce</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">introduce p v</code> registers <code class="code">v</code> into <code class="code">p</code> and updates its rank 
+    accordingly.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALis_empty">is_empty</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">is_empty</code> tells whether a set is empty.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALis_flexible">is_flexible</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">is_flexible v</code> returns true if <code class="code">v</code> is a flexible variable.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALis_regular_datacon_scheme">is_regular_datacon_scheme</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">is_regular_datacon_scheme env vs ty</code> checks that forall vs.ty is 
+    a valid scheme for a data constructor that is to say following the
+    shape:
+    K :: forall a1 ..
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALis_rigid">is_rigid</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">is_rigid v</code> returns true if <code class="code">v</code> is a constant or rigid variable.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALis_structured">is_structured</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">is_structured v</code> tests if <code class="code">v</code> is related to a term.
+</div>
+</td></tr>
+<tr><td><a href="Processing.html#VALis_task_traced">is_task_traced</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="CoreAlgebra.html#VALiter">iter</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">iter f term</code> applies <code class="code">f</code> successively to every parameter of
+    the term <code class="code">term</code>.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALiter">iter</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">iter f env</code> iterates over the mappings of <code class="code">env</code>.
+</div>
+</td></tr>
+<tr><td><a href="Misc.html#VALiter">iter</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+<code class="code">iter</code> is similar to <code class="code"><span class="constructor">List</span>.iter</code>, but does not require <code class="code">f</code> to
+    return a result of type <code class="code">unit</code>.
+</div>
+</td></tr>
+<tr><td><a href="InfiniteArray.html#VALiteri">iteri</a> [<a href="InfiniteArray.html">InfiniteArray</a>]</td>
+<td><div class="info">
+<code class="code">iteri f t</code> computes <code class="code">f i x</code> on every element <code class="code">x</code> at position <code class="code">i</code> 
+    in <code class="code">t</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>J</td></tr>
+<tr><td><a href="Positions.html#VALjoin">join</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">join p1 p2</code> returns a position that starts where <code class="code">p1</code>
+    starts and stops where <code class="code">p2</code> stops.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALjoinf">joinf</a> [<a href="Positions.html">Positions</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>L</td></tr>
+<tr><td><a href="Misc.html#VALlast">last</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+Returns the last element of a list.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALlex_join">lex_join</a> [<a href="Positions.html">Positions</a>]</td>
+<td></td></tr>
+<tr><td><a href="Positions.html#VALline">line</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">column p</code> returns the line number of to the Lexing.position <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALljoinf">ljoinf</a> [<a href="Positions.html">Positions</a>]</td>
+<td></td></tr>
+<tr><td><a href="Env.html#VALlookup">lookup</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">lookup env k</code> returns the value associated to <code class="code">k</code> 
+    or raises <code class="code"><span class="constructor">Not_found</span></code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALlookup_datacon">lookup_datacon</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+<code class="code">lookup_datacon env k</code> gives access to the typing information
+    related to the data constructor <code class="code">k</code> in <code class="code">env</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALlookup_type_variable">lookup_type_variable</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Looks for a type constructor given its name.
+</div>
+</td></tr>
+<tr><td align="left"><br>M</td></tr>
+<tr><td><a href="InfiniteArray.html#VALmake">make</a> [<a href="InfiniteArray.html">InfiniteArray</a>]</td>
+<td><div class="info">
+<code class="code">make x</code> creates an infinite array, where every slot contains <code class="code">x</code>.
+</div>
+</td></tr>
+<tr><td><a href="Misc.html#VALmake_indexes">make_indexes</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+Returns a pair of function <code class="code">import</code> and <code class="code">export</code> to assign
+  a unique integer to a given value.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALmap">map</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">map f term</code> returns a term whose head symbol is that of <code class="code">term</code>
+    and whose parameters are the images of <code class="code">term</code>'s parameters
+    through <code class="code">f</code>.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#VALmap">map</a> [<a href="Env.html">Env</a>]</td>
+<td><div class="info">
+<code class="code">map f env</code> applies a function <code class="code">f</code> on each mapping of <code class="code">env</code>
+    building a list <code class="code">f (k, v)</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALmonoscheme">monoscheme</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">monoscheme header</code> turns <code class="code">header</code> into a monomorphic type scheme.
+</div>
+</td></tr>
+<tr><td align="left"><br>N</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALn_arrows">n_arrows</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">arrow env ts</code> returns the type <code class="code">t0 <span class="keywordsign">-&gt;</span> ... <span class="keywordsign">-&gt;</span> tn</code>.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALn_rowcons">n_rowcons</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">n_rowcons l ts r</code> returns the row type <code class="code">(l0: t0; ...; ln: tn; r)</code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALnew_pool">new_pool</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">new_pool p</code> introduces a new pool with a rank equals to the one of 
+    <code class="code">p</code> + 1.
+</div>
+</td></tr>
+<tr><td><a href="IntRank.html#VALnone">none</a> [<a href="IntRank.html">IntRank</a>]</td>
+<td><div class="info">
+<code class="code">none</code> is the special value used to identify the universal
+    quantifiers of a type scheme in an environment frame.
+</div>
+</td></tr>
+<tr><td><a href="Mark.html#VALnone">none</a> [<a href="Mark.html">Mark</a>]</td>
+<td><div class="info">
+<code class="code">none</code> is a distinguished mark, created via an initial call to
+    <code class="code">fresh()</code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALnumber">number</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">number p</code> returns the rank of a <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>O</td></tr>
+<tr><td><a href="IntRank.html#VALoutermost">outermost</a> [<a href="IntRank.html">IntRank</a>]</td>
+<td><div class="info">
+<code class="code">outermost</code> is the rank assigned to variables that are
+    existentially bound at the outermost level.
+</div>
+</td></tr>
+<tr><td><a href="PrettyPrinter.html#VALoutput_string">output_string</a> [<a href="PrettyPrinter.html">PrettyPrinter</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="MiniSyntacticAnalysis.html#VALparse_constraint_from_string">parse_constraint_from_string</a> [<a href="MiniSyntacticAnalysis.html">MiniSyntacticAnalysis</a>]</td>
+<td><div class="info">
+Parse a constraint given as a string.
+</div>
+</td></tr>
+<tr><td><a href="MiniSyntacticAnalysis.html#VALparse_program_from_string">parse_program_from_string</a> [<a href="MiniSyntacticAnalysis.html">MiniSyntacticAnalysis</a>]</td>
+<td><div class="info">
+Parse a program given as string.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALpos_or_undef">pos_or_undef</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">pos_or_undef po</code> is the identity function except if po = None,
+    in that case, it returns <code class="code">undefined_position</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALpre">pre</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">pre env t</code> returns the type <code class="code">pre t</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALprint">print</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">print s</code> provides a textual representation of the set <code class="code">s</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALprint">print</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">print t</code> returns a string representation of the disjoint
+      sum <code class="code">t</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniPrettyPrinter.html#VALprint_binding">print_binding</a> [<a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a>]</td>
+<td><div class="info">
+<code class="code">print_binding b</code> pretty-prints <code class="code">b</code> according to the active 
+    printing mode.
+</div>
+</td></tr>
+<tr><td><a href="MiniConstraintPrinter.html#VALprint_constraint">print_constraint</a> [<a href="MiniConstraintPrinter.html">MiniConstraintPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniConstraintPrinter.html#VALprint_constraint_task">print_constraint_task</a> [<a href="MiniConstraintPrinter.html">MiniConstraintPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniSolver.html#VALprint_env">print_env</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+<code class="code">print_env printer env</code> use the <code class="code">printer</code> of variable in order to
+    display <code class="code">env</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniPrettyPrinter.html#VALprint_expression">print_expression</a> [<a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a>]</td>
+<td><div class="info">
+<code class="code">print_expression e</code> pretty-prints <code class="code">e</code> according to the active 
+    printing mode.
+</div>
+</td></tr>
+<tr><td><a href="MiniPrettyPrinter.html#VALprint_program">print_program</a> [<a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a>]</td>
+<td><div class="info">
+<code class="code">print_binding p</code> pretty-prints <code class="code">p</code> according to the active 
+    printing mode.
+</div>
+</td></tr>
+<tr><td><a href="Misc.html#VALprint_separated_list">print_separated_list</a> [<a href="Misc.html">Misc</a>]</td>
+<td><div class="info">
+Prints a list of elements, with one occurrence of the separator
+    between every two consecutive elements.
+</div>
+</td></tr>
+<tr><td><a href="Print.html#VALprint_term">print_term</a> [<a href="Print.html">Print</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniPrettyPrinter.html#VALprint_type">print_type</a> [<a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a>]</td>
+<td><div class="info">
+<code class="code">print_type paren t</code> pretty-prints <code class="code">t</code> according to the active 
+    printing mode.
+</div>
+</td></tr>
+<tr><td><a href="Print.html#VALprint_variable">print_variable</a> [<a href="Print.html">Print</a>]</td>
+<td><div class="info">
+<code class="code">print context x</code> returns a printable representation of the
+    object <code class="code">x</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniConstraintPrinter.html#VALprintf_constraint">printf_constraint</a> [<a href="MiniConstraintPrinter.html">MiniConstraintPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="ConstraintPrettyPrinter.html#VALprintf_constraint">printf_constraint</a> [<a href="ConstraintPrettyPrinter.html">ConstraintPrettyPrinter</a>]</td>
+<td><div class="info">
+Pretty printer for <code class="code">formula</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALpriority">priority</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">priority s</code> returns the priority of <code class="code">s</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALrecord_constructor">record_constructor</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">record_constructor env</code> return the type constructor <code class="code">{.}</code>.
+</div>
+</td></tr>
+<tr><td><a href="UnionFind.html#VALredundant">redundant</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">redundant</code> maps all members of an equivalence class, but one, to
+    <code class="code"><span class="keyword">true</span></code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALregister">register</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">register p v</code> adds <code class="code">v</code> into the pool <code class="code">p</code> without modifying the
+    rank of <code class="code">v</code>.
+</div>
+</td></tr>
+<tr><td><a href="Processing.html#VALregister">register</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniConstraintPrinter.html#VALregister_tasks">register_tasks</a> [<a href="MiniConstraintPrinter.html">MiniConstraintPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniInfer.html#VALremove_init_context">remove_init_context</a> [<a href="MiniInfer.html">MiniInfer</a>]</td>
+<td><div class="info">
+<code class="code">remove_init_context</code> returns the context part that concerns the
+    initial environment.
+</div>
+</td></tr>
+<tr><td><a href="Print.html#VALreset">reset</a> [<a href="Print.html">Print</a>]</td>
+<td><div class="info">
+<code class="code">reset()</code> clears <code class="code">print</code>'s memoization table.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALresult_type">result_type</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">result_type env t</code> returns the result type of the type <code class="code">t</code> if
+    <code class="code">t</code> is an arrow type.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALrowcons">rowcons</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">rowcons l t r</code> returns the row type <code class="code">(l: t; r)</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>S</td></tr>
+<tr><td><a href="Mark.html#VALsame">same</a> [<a href="Mark.html">Mark</a>]</td>
+<td><div class="info">
+<code class="code">same mark1 mark2</code> tells whether <code class="code">mark1</code> and <code class="code">mark2</code> are the same
+    mark, that is, were created by the same call to <code class="code">fresh</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALscheme">scheme</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">scheme rqs names f</code> associates a fresh variable with every name in
+    the set <code class="code">names</code>, yielding a map <code class="code">m</code> of names to variables, and returns
+    the type scheme <code class="code">forall rqs m [f m] m</code>, where the variables in <code class="code">rqs</code>
+    are rigid and the variables in <code class="code">m</code> are flexible.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#VALscheme'">scheme'</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">scheme' rqs rnames fnames f</code> associates a fresh variable with every 
+  name in the set <code class="code">fnames</code> and <code class="code">rnames</code>, yielding a map <code class="code">m</code> of names to 
+  variables, and returns the type scheme <code class="code">forall (rqs @ rm) fm [f m] m</code>, 
+  where the variables in <code class="code">rqs</code> and <code class="code">rm</code> are rigid and the variables in <code class="code">fm</code> 
+  are flexible.
+</div>
+</td></tr>
+<tr><td><a href="InfiniteArray.html#VALset">set</a> [<a href="InfiniteArray.html">InfiniteArray</a>]</td>
+<td><div class="info">
+<code class="code">set a i x</code> sets the element contained at offset <code class="code">i</code> in the array
+    <code class="code">a</code> to <code class="code">x</code>.
+</div>
+</td></tr>
+<tr><td><a href="Errors.html#VALset_error_channel">set_error_channel</a> [<a href="Errors.html">Errors</a>]</td>
+<td><div class="info">
+<code class="code">set_error_channel c</code> defines the channel into which we print
+    the error messages.
+</div>
+</td></tr>
+<tr><td><a href="Misc.StringMap.html#VALsingleton">singleton</a> [<a href="Misc.StringMap.html">Misc.StringMap</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniSolver.html#VALsolve">solve</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+<code class="code">solve tracer c</code> solves <code class="code">c</code> by doing in-place modifications resulting
+    in a environment.
+</div>
+</td></tr>
+<tr><td><a href="Solver.html#VALsolve">solve</a> [<a href="Solver.html">Solver</a>]</td>
+<td><div class="info">
+<code class="code">solve tracer c</code> solves <code class="code">c</code> by doing in-place modifications resulting
+    in a environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniKindInferencer.html#VALstar">star</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+<code class="code">star</code> is the kind of ml values.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALstart_of_position">start_of_position</a> [<a href="Positions.html">Positions</a>]</td>
+<td></td></tr>
+<tr><td><a href="Misc.StringMap.html#VALstrict_add">strict_add</a> [<a href="Misc.StringMap.html">Misc.StringMap</a>]</td>
+<td></td></tr>
+<tr><td><a href="Misc.StringMap.html#VALstrict_union">strict_union</a> [<a href="Misc.StringMap.html">Misc.StringMap</a>]</td>
+<td></td></tr>
+<tr><td><a href="Positions.html#VALstring_of_characters">string_of_characters</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">string_of_characters (c1,c2)</code> returns the standard (Emacs-like) 
+    representation of the character interval (c1,c2).
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALstring_of_cpos">string_of_cpos</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">string_of_cpos p</code> returns a string representation of 
+    the lexer's current position.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALstring_of_lex_pos">string_of_lex_pos</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">string_of_lex_pos p</code> returns a string representation for
+    the lexing position <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#VALstring_of_pos">string_of_pos</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+<code class="code">string_of_pos p</code> returns the standard (Emacs-like) representation
+    of the position <code class="code">p</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALsum">sum</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">sum s t</code> adds <code class="code">s</code> to the sum denoted by <code class="code">t</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALsvariable">svariable</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">svariable ()</code> is equivalent to <code class="code">variable <span class="constructor">Set</span>.empty</code>.
+</div>
+</td></tr>
+<tr><td align="left"><br>T</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALtuple">tuple</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">tuple env ts</code> returns <code class="code">t0 * ... * tn</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALtycon">tycon</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">tycon t xs</code> builds the internal representation of the type <code class="code">t xs</code>.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALtycon_args">tycon_args</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniAlgebra.html#VALtycon_name">tycon_name</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALtypcon_kind">typcon_kind</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Accessor to the kind of a type.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#VALtypcon_variable">typcon_variable</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+Accessor the unification variable of a type.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#VALtype_of_primitive">type_of_primitive</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">type_of_primitive p</code> returns the type of a source language primitive.
+</div>
+</td></tr>
+<tr><td align="left"><br>U</td></tr>
+<tr><td><a href="Positions.html#VALundefined_position">undefined_position</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+This value is used when an object does not from
+    a particular input location.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#VALuniform">uniform</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">uniform t</code> returns the row type that maps any label to <code class="code">t</code>.
+</div>
+</td></tr>
+<tr><td><a href="Unifier.html#VALunify">unify</a> [<a href="Unifier.html">Unifier</a>]</td>
+<td><div class="info">
+<code class="code">unify pos register v1 v2</code> equates the variables <code class="code">v1</code> and <code class="code">v2</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALunify">unify</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">unify t t'</code> solves the equality between two disjoint sums
+      by determining the unification variable if necessary.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#VALunion">union</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+<code class="code">union</code> returns the union of two sets, which may safely be assumed
+	disjoint.
+</div>
+</td></tr>
+<tr><td><a href="UnionFind.html#VALunion">union</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+<code class="code">union point1 point2</code> merges the equivalence classes associated
+    with <code class="code">point1</code> and <code class="code">point2</code> (which must be distinct) into a single
+    class whose descriptor is that originally associated with <code class="code">point2</code>.
+</div>
+</td></tr>
+<tr><td><a href="Misc.StringMap.html#VALunion">union</a> [<a href="Misc.StringMap.html">Misc.StringMap</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>V</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable">variable</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable()</code> returns a new variable.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#VALvariable">variable</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+<code class="code">variable s</code> returns a fresh unification variable whose 
+      denotation cannot intersect <code class="code">s</code>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable_list">variable_list</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable_list xs</code> allocates a fresh variable for every element in the 
+    list <code class="code">xs</code>, and returns both a list of these variables and an association
+    list that maps elements to variables, viewed as types.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable_list_from_names">variable_list_from_names</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable_list_from_strings f xs</code> allocates a fresh variable for every 
+  string in the list <code class="code">xs</code>, and returns both a list of these variables 
+  and an association list that maps elements to variables, viewed as types.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable_name">variable_name</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable_name v</code> returns the name of <code class="code">v</code> if it exists.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable_set">variable_set</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable_set xs</code> allocates a fresh variable for every element in the
+    set <code class="code">xs</code>, and returns both a list of these variables and a map of
+    elements to variables.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#VALvariable_structure">variable_structure</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">variable_structure v</code> returns the structure of <code class="code">v</code> if it exists.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypes.html#VALvariables_of_typ">variables_of_typ</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">variables_of_typ ty</code> returns the type variables of <code class="code">ty</code>.
+</div>
+</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="PrettyPrinter" rel="Chapter" href="PrettyPrinter.html">
+<link title="InfiniteArray" rel="Chapter" href="InfiniteArray.html">
+<link title="Misc" rel="Chapter" href="Misc.html">
+<link title="Env" rel="Chapter" href="Env.html">
+<link title="Positions" rel="Chapter" href="Positions.html">
+<link title="Mark" rel="Chapter" href="Mark.html">
+<link title="UnionFind" rel="Chapter" href="UnionFind.html">
+<link title="AstPositions" rel="Chapter" href="AstPositions.html">
+<link title="Processing" rel="Chapter" href="Processing.html">
+<link title="ParsingExceptions" rel="Chapter" href="ParsingExceptions.html">
+<link title="BasicSetEquations" rel="Chapter" href="BasicSetEquations.html">
+<link title="IntRank" rel="Chapter" href="IntRank.html">
+<link title="CoreAlgebra" rel="Chapter" href="CoreAlgebra.html">
+<link title="MultiEquation" rel="Chapter" href="MultiEquation.html">
+<link title="Unifier" rel="Chapter" href="Unifier.html">
+<link title="Constraint" rel="Chapter" href="Constraint.html">
+<link title="Solver" rel="Chapter" href="Solver.html">
+<link title="MiniAst" rel="Chapter" href="MiniAst.html">
+<link title="MiniAlgebra" rel="Chapter" href="MiniAlgebra.html">
+<link title="Print" rel="Chapter" href="Print.html">
+<link title="ConstraintPrettyPrinter" rel="Chapter" href="ConstraintPrettyPrinter.html">
+<link title="MiniTypingExceptions" rel="Chapter" href="MiniTypingExceptions.html">
+<link title="MiniPrettyPrinter" rel="Chapter" href="MiniPrettyPrinter.html">
+<link title="MiniKindInferencer" rel="Chapter" href="MiniKindInferencer.html">
+<link title="MiniTypingEnvironment" rel="Chapter" href="MiniTypingEnvironment.html">
+<link title="MiniTypes" rel="Chapter" href="MiniTypes.html">
+<link title="MiniInfer" rel="Chapter" href="MiniInfer.html">
+<link title="MiniSyntacticAnalysis" rel="Chapter" href="MiniSyntacticAnalysis.html">
+<link title="MiniConstraintPrinter" rel="Chapter" href="MiniConstraintPrinter.html">
+<link title="MiniSolver" rel="Chapter" href="MiniSolver.html">
+<link title="Errors" rel="Chapter" href="Errors.html"><title>Index of types</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of types</h1>
+<table>
+<tr><td align="left"><br>A</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#TYPEalgebraic_datatype">algebraic_datatype</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+An algebraic datatype is characterized by a list of data constructors.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#TYPEarterm">arterm</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+Terms whose parameters are either leaves of type <code class="code"><span class="keywordsign">'</span>a</code>, or terms.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#TYPEassociativity">associativity</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+Associativity of a symbol.
+</div>
+</td></tr>
+<tr><td align="left"><br>B</td></tr>
+<tr><td><a href="MiniAst.html#TYPEbinding">binding</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+A <code class="code">binding</code> is 
+     a set of value definition (<a href="MiniAst.html#TYPEvalue_definition"><code class="code"><span class="constructor">MiniAst</span>.value_definition</code></a>):
+           <pre class="codepre"><code class="code">&nbsp;<span class="keyword">let</span>&nbsp;v1&nbsp;=&nbsp;exp1&nbsp;<span class="keyword">and</span>&nbsp;v2&nbsp;=&nbsp;exp2&nbsp;<span class="keyword">and</span>&nbsp;...&nbsp;<span class="keyword">and</span>&nbsp;vn&nbsp;=&nbsp;expn&nbsp;v&nbsp;</code></pre>, a set of mutually recursive definitions:
+           <pre class="codepre"><code class="code">&nbsp;<span class="keyword">let</span>&nbsp;<span class="keyword">rec</span>&nbsp;v1&nbsp;=&nbsp;exp1&nbsp;<span class="keyword">and</span>&nbsp;v2&nbsp;=&nbsp;exp2&nbsp;<span class="keyword">and</span>&nbsp;...&nbsp;<span class="keyword">and</span>&nbsp;vn&nbsp;=&nbsp;expn&nbsp;v&nbsp;</code></pre>, a type definition (<a href="MiniAst.html#TYPEtype_definition"><code class="code"><span class="constructor">MiniAst</span>.type_definition</code></a>).
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#TYPEbuiltin_dataconstructor">builtin_dataconstructor</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+The type of predefined data constructors.
+</div>
+</td></tr>
+<tr><td align="left"><br>C</td></tr>
+<tr><td><a href="MiniAst.html#TYPEclause">clause</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Pattern matching clause.
+</div>
+</td></tr>
+<tr><td><a href="MiniInfer.html#TYPEcontext">context</a> [<a href="MiniInfer.html">MiniInfer</a>]</td>
+<td><div class="info">
+Constraint contexts.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#TYPEcrterm">crterm</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+The types in contraints are implemented using the internal data structure
+    defined in <a href="CoreAlgebra.html"><code class="code"><span class="constructor">CoreAlgebra</span></code></a>.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEcrterm">crterm</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+The type of term of arbitrary depth.
+</div>
+</td></tr>
+<tr><td align="left"><br>D</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#TYPEdata_constructor">data_constructor</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+A data constructor's type is denoted by an ML scheme.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEdescriptor">descriptor</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+A descriptor contains several pieces of information, the most
+    important of which is the structure of the multi-equation, or,
+    in other words, its unique non-variable member, if there is one.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEdname">dname</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Data constructors.
+</div>
+</td></tr>
+<tr><td align="left"><br>E</td></tr>
+<tr><td><a href="MiniKindInferencer.html#TYPEenv">env</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+The kind inference engine uses an environment implemented by
+    two functions (get, add).
+</div>
+</td></tr>
+<tr><td><a href="MiniSolver.html#TYPEenvironment">environment</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+The solver environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#TYPEenvironment">environment</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+The type of the typing environement.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#TYPEenvironment">environment</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+A type constructor is a type variable with higher-order kind.
+</div>
+</td></tr>
+<tr><td><a href="Solver.html#TYPEenvironment">environment</a> [<a href="Solver.html">Solver</a>]</td>
+<td><div class="info">
+The solver environment.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEexpression">expression</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+An <code class="code">expression</code> in Mini.
+</div>
+</td></tr>
+<tr><td align="left"><br>F</td></tr>
+<tr><td><a href="PrettyPrinter.html#TYPEformatter_output">formatter_output</a> [<a href="PrettyPrinter.html">PrettyPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniConstraintPrinter.html#TYPEformula">formula</a> [<a href="MiniConstraintPrinter.html">MiniConstraintPrinter</a>]</td>
+<td></td></tr>
+<tr><td><a href="ConstraintPrettyPrinter.html#TYPEformula">formula</a> [<a href="ConstraintPrettyPrinter.html">ConstraintPrettyPrinter</a>]</td>
+<td><div class="info">
+The constraint over equality between terms.
+</div>
+</td></tr>
+<tr><td align="left"><br>K</td></tr>
+<tr><td><a href="MiniAst.html#TYPEkind">kind</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>L</td></tr>
+<tr><td><a href="MiniAst.html#TYPElname">lname</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Record labels.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#TYPElname">lname</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+<code class="code">lname</code> is the type of label.
+</div>
+</td></tr>
+<tr><td align="left"><br>M</td></tr>
+<tr><td><a href="PrettyPrinter.html#TYPEmode">mode</a> [<a href="PrettyPrinter.html">PrettyPrinter</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>N</td></tr>
+<tr><td><a href="MiniAst.html#TYPEname">name</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Program identifiers.
+</div>
+</td></tr>
+<tr><td align="left"><br>O</td></tr>
+<tr><td><a href="Processing.html#TYPEoptions">options</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="PrettyPrinter.html#TYPEoutput">output</a> [<a href="PrettyPrinter.html">PrettyPrinter</a>]</td>
+<td></td></tr>
+<tr><td align="left"><br>P</td></tr>
+<tr><td><a href="MiniAst.html#TYPEpattern">pattern</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td></td></tr>
+<tr><td><a href="UnionFind.html#TYPEpoint">point</a> [<a href="UnionFind.html">UnionFind</a>]</td>
+<td><div class="info">
+The abstraction defined by this module is a set of points,
+    partitioned into equivalence classes.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEpool">pool</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">pool</code> is an abstract type denoting a set of type variables related
+    to a variable binding location.
+</div>
+</td></tr>
+<tr><td><a href="Positions.html#TYPEposition">position</a> [<a href="Positions.html">Positions</a>]</td>
+<td><div class="info">
+Abstract for position in the lexing stream.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEprimitive">primitive</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Constant.
+</div>
+</td></tr>
+<tr><td><a href="Processing.html#TYPEprocess">process</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEprocess_data">process_data</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEprocess_datas">process_datas</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEprocess_type">process_type</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEprocess_types">process_types</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniAst.html#TYPEprogram">program</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+A <code class="code">program</code> in the Mini language is a sequence of toplevel bindings.
+</div>
+</td></tr>
+<tr><td align="left"><br>R</td></tr>
+<tr><td><a href="MiniAst.html#TYPErecord_binding">record_binding</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniTypes.html#TYPErecursive_value_definition_kind">recursive_value_definition_kind</a> [<a href="MiniTypes.html">MiniTypes</a>]</td>
+<td><div class="info">
+<code class="code">recursive_value_definition_kind</code> tests if a recursive definition
+    is annotated or not.
+</div>
+</td></tr>
+<tr><td align="left"><br>S</td></tr>
+<tr><td><a href="Constraint.html#TYPEscheme">scheme</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+A type scheme is a pair of a constraint <code class="code">c</code> and a header <code class="code">h</code>,
+    wrapped within two sets of universal quantifiers <code class="code">rqs</code> and
+    <code class="code">fqs</code>.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#TYPEsname">sname</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">sname</code> is the type of the names that are used to refer to type
+    schemes inside constraints.
+</div>
+</td></tr>
+<tr><td><a href="MiniSolver.html#TYPEsolving_step">solving_step</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+A <code class="code">solving_step</code> describes a elementary step of the solver.
+</div>
+</td></tr>
+<tr><td><a href="Solver.html#TYPEsolving_step">solving_step</a> [<a href="Solver.html">Solver</a>]</td>
+<td><div class="info">
+A <code class="code">solving_step</code> describes a elementary step of the solver.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEstructure">structure</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+A multi-equation can be related to a term.
+</div>
+</td></tr>
+<tr><td><a href="MiniAlgebra.html#TYPEsymbol">symbol</a> [<a href="MiniAlgebra.html">MiniAlgebra</a>]</td>
+<td><div class="info">
+Head symbols.
+</div>
+</td></tr>
+<tr><td align="left"><br>T</td></tr>
+<tr><td><a href="MiniKindInferencer.html#TYPEt">t</a> [<a href="MiniKindInferencer.html">MiniKindInferencer</a>]</td>
+<td><div class="info">
+Internal kind representation.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.RowLabel.html#TYPEt">t</a> [<a href="CoreAlgebra.RowLabel.html">CoreAlgebra.RowLabel</a>]</td>
+<td><div class="info">
+A row label is an object of type <code class="code">t</code>, that is, an integer.
+</div>
+</td></tr>
+<tr><td><a href="IntRank.html#TYPEt">t</a> [<a href="IntRank.html">IntRank</a>]</td>
+<td></td></tr>
+<tr><td><a href="BasicSetEquations.SetType.html#TYPEt">t</a> [<a href="BasicSetEquations.SetType.html">BasicSetEquations.SetType</a>]</td>
+<td><div class="info">
+The type of sets.
+</div>
+</td></tr>
+<tr><td><a href="Mark.html#TYPEt">t</a> [<a href="Mark.html">Mark</a>]</td>
+<td><div class="info">
+The type of marks.
+</div>
+</td></tr>
+<tr><td><a href="Env.html#TYPEt">t</a> [<a href="Env.html">Env</a>]</td>
+<td></td></tr>
+<tr><td><a href="InfiniteArray.html#TYPEt">t</a> [<a href="InfiniteArray.html">InfiniteArray</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEtask">task</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="Processing.html#TYPEtask_name">task_name</a> [<a href="Processing.html">Processing</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniSolver.html#TYPEtconstraint">tconstraint</a> [<a href="MiniSolver.html">MiniSolver</a>]</td>
+<td><div class="info">
+The constraint to solve.
+</div>
+</td></tr>
+<tr><td><a href="Solver.html#TYPEtconstraint">tconstraint</a> [<a href="Solver.html">Solver</a>]</td>
+<td><div class="info">
+The constraint to solve.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#TYPEtconstraint">tconstraint</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+Here is an abbreviation for the type constraint structure instantiated using
+    our internal variable and term representations.
+</div>
+</td></tr>
+<tr><td><a href="CoreAlgebra.html#TYPEterm">term</a> [<a href="CoreAlgebra.html">CoreAlgebra</a>]</td>
+<td><div class="info">
+Terms whose parameters are of type <code class="code"><span class="keywordsign">'</span>a</code>.
+</div>
+</td></tr>
+<tr><td><a href="BasicSetEquations.Make.html#TYPEterm">term</a> [<a href="BasicSetEquations.Make.html">BasicSetEquations.Make</a>]</td>
+<td><div class="info">
+A <code class="code">term</code> denotes a disjoint sum of sets with unification
+      variables inside.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEtname">tname</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Type variable names.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEtname">tname</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+<code class="code">tname</code> is the type of type identifiers.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#TYPEtscheme">tscheme</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+Here is an abbreviation for the type scheme structure instantiated using
+    out internal variable and term representations.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEtyp">typ</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td></td></tr>
+<tr><td><a href="Constraint.html#TYPEtype_constraint">type_constraint</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+<code class="code">type_constraint</code> defines a syntax for the constraints between 
+    types.
+</div>
+</td></tr>
+<tr><td><a href="MiniAst.html#TYPEtype_declaration">type_declaration</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td></td></tr>
+<tr><td><a href="MiniAst.html#TYPEtype_definition">type_definition</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+Type definitions.
+</div>
+</td></tr>
+<tr><td><a href="MiniTypingEnvironment.html#TYPEtype_info">type_info</a> [<a href="MiniTypingEnvironment.html">MiniTypingEnvironment</a>]</td>
+<td><div class="info">
+A type is characterized by a kind, a variable and an optional set of
+    algebraic data constructors.
+</div>
+</td></tr>
+<tr><td align="left"><br>V</td></tr>
+<tr><td><a href="MiniAst.html#TYPEvalue_definition">value_definition</a> [<a href="MiniAst.html">MiniAst</a>]</td>
+<td><div class="info">
+A value definition consists of a list of explicit universal
+    quantifiers, a pattern, and an expression.
+</div>
+</td></tr>
+<tr><td><a href="Constraint.html#TYPEvariable">variable</a> [<a href="Constraint.html">Constraint</a>]</td>
+<td><div class="info">
+The variables that appear in contraints are the same as the multi-equation 
+    ones.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEvariable">variable</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+The structure of the terms manipulated by a unifier is fixed and
+    made visible to the outside, because it must be accessible to
+    the constraint solver, which is built on top of a unifier.
+</div>
+</td></tr>
+<tr><td><a href="MultiEquation.html#TYPEvariable_kind">variable_kind</a> [<a href="MultiEquation.html">MultiEquation</a>]</td>
+<td><div class="info">
+There are two kinds of variable.
+</div>
+</td></tr>
+</table>
+</body>
+</html>

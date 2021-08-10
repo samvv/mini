@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="PrettyPrinter" rel="Chapter" href="PrettyPrinter.html">
+<link title="InfiniteArray" rel="Chapter" href="InfiniteArray.html">
+<link title="Misc" rel="Chapter" href="Misc.html">
+<link title="Env" rel="Chapter" href="Env.html">
+<link title="Positions" rel="Chapter" href="Positions.html">
+<link title="Mark" rel="Chapter" href="Mark.html">
+<link title="UnionFind" rel="Chapter" href="UnionFind.html">
+<link title="AstPositions" rel="Chapter" href="AstPositions.html">
+<link title="Processing" rel="Chapter" href="Processing.html">
+<link title="ParsingExceptions" rel="Chapter" href="ParsingExceptions.html">
+<link title="BasicSetEquations" rel="Chapter" href="BasicSetEquations.html">
+<link title="IntRank" rel="Chapter" href="IntRank.html">
+<link title="CoreAlgebra" rel="Chapter" href="CoreAlgebra.html">
+<link title="MultiEquation" rel="Chapter" href="MultiEquation.html">
+<link title="Unifier" rel="Chapter" href="Unifier.html">
+<link title="Constraint" rel="Chapter" href="Constraint.html">
+<link title="Solver" rel="Chapter" href="Solver.html">
+<link title="MiniAst" rel="Chapter" href="MiniAst.html">
+<link title="MiniAlgebra" rel="Chapter" href="MiniAlgebra.html">
+<link title="Print" rel="Chapter" href="Print.html">
+<link title="ConstraintPrettyPrinter" rel="Chapter" href="ConstraintPrettyPrinter.html">
+<link title="MiniTypingExceptions" rel="Chapter" href="MiniTypingExceptions.html">
+<link title="MiniPrettyPrinter" rel="Chapter" href="MiniPrettyPrinter.html">
+<link title="MiniKindInferencer" rel="Chapter" href="MiniKindInferencer.html">
+<link title="MiniTypingEnvironment" rel="Chapter" href="MiniTypingEnvironment.html">
+<link title="MiniTypes" rel="Chapter" href="MiniTypes.html">
+<link title="MiniInfer" rel="Chapter" href="MiniInfer.html">
+<link title="MiniSyntacticAnalysis" rel="Chapter" href="MiniSyntacticAnalysis.html">
+<link title="MiniConstraintPrinter" rel="Chapter" href="MiniConstraintPrinter.html">
+<link title="MiniSolver" rel="Chapter" href="MiniSolver.html">
+<link title="Errors" rel="Chapter" href="Errors.html"><title></title>
+</head>
+<body>
+<h1></h1>
+<h1 id="1_TheMiniinferenceengine">The Mini inference engine</h1>
+<p>
+
+The source code of this package compiles a program called <code class="code">mini</code>, a
+type inference engine for the Mini language. 
+<p>
+
+A basic usage of <code class="code">mini</code> is to provide a source file as input. Let's 
+<code class="code">foo.ml</code> be this file:
+<p>
+
+<pre class="codepre"><code class="code"><span class="keyword">let</span>&nbsp;id&nbsp;x&nbsp;=&nbsp;x<br>
+</code></pre>
+<p>
+
+<pre class="verbatim"># mini foo.ml</pre>
+<p>
+
+returns
+<p>
+
+<pre class="verbatim">val id: forall a. a -&gt; a</pre>
+<p>
+
+The documentation of the module <a href="MiniAst.html"><code class="code"><span class="constructor">MiniAst</span></code></a> explains the concrete 
+syntax of the Mini language. The "tests" directory contains examples of
+valid Mini programs.
+<p>
+
+<h2 id="2_Generalmodulesfortypeinference">General modules for type inference</h2>
+<br>
+<table class="indextable">
+<tr><td class="module"><a href="UnionFind.html">UnionFind</a></td><td><div class="info">
+This module implements a simple and efficient union/find algorithm.
+</div>
+</td></tr>
+<tr><td class="module"><a href="BasicSetEquations.html">BasicSetEquations</a></td><td><div class="info">
+This module provides a solver for equations involving set constants,
+   variables, and disjoint sums (i.e.
+</div>
+</td></tr>
+<tr><td class="module"><a href="CoreAlgebra.html">CoreAlgebra</a></td><td><div class="info">
+This module implements a core algebra of first order terms.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MultiEquation.html">MultiEquation</a></td><td><div class="info">
+This module implements a data structure for multi-equations.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Constraint.html">Constraint</a></td><td><div class="info">
+This module manages a data structure for constraint in a multi-equation
+    framework.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Unifier.html">Unifier</a></td><td><div class="info">
+This module implements unification of (ranked) multi-equations
+    over a row algebra, that is, an algebra obtained by extending a
+    free algebra <code class="code"><span class="constructor">A</span></code> with rows (see module <a href="CoreAlgebra.html"><code class="code"><span class="constructor">CoreAlgebra</span></code></a>).
+</div>
+</td></tr>
+<tr><td class="module"><a href="Solver.html">Solver</a></td><td><div class="info">
+This module provides a constraint solver based on unification
+    under a mixed prefix.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Print.html">Print</a></td><td><div class="info">
+This module provides a simple pretty-printer for the terms
+    maintained by a unifier.
+</div>
+</td></tr>
+</table>
+
+<p>
+
+<h2 id="2_ModulesrelatedtotheMiniprogramminglanguage">Modules related to the Mini programming language</h2>
+<br>
+<table class="indextable">
+<tr><td class="module"><a href="MiniSyntacticAnalysis.html">MiniSyntacticAnalysis</a></td><td><div class="info">
+This module provides a parser for program and a parser for constraint.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniAst.html">MiniAst</a></td><td><div class="info">
+The abstract syntax of MiniML programs.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniAlgebra.html">MiniAlgebra</a></td><td><div class="info">
+This module provides the type algebra for the Mini language.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniTypingExceptions.html">MiniTypingExceptions</a></td><td><div class="info">
+This modules declares the exceptions raised by the type inference engine.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniInfer.html">MiniInfer</a></td><td><div class="info">
+This module expresses the problem of type inference for MiniML 
+    programs to the problem of constraint solving by a transformation
+    of program into typing constraints.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniSolver.html">MiniSolver</a></td><td><div class="info">
+This module provides a constraint solver based on unification
+    under a mixed prefix.
+</div>
+</td></tr>
+<tr><td class="module"><a href="AstPositions.html">AstPositions</a></td><td><div class="info">
+This module provides shortcuts for AST position handling.
+</div>
+</td></tr>
+<tr><td class="module"><a href="MiniPrettyPrinter.html">MiniPrettyPrinter</a></td><td><div class="info">
+This modules instanciates <a href="PrettyPrinter.html"><code class="code"><span class="constructor">PrettyPrinter</span></code></a> for the Mini language.
+</div>
+</td></tr>
+</table>
+
+<p>
+
+<h2 id="2_Miscellaneous">Miscellaneous</h2>
+<br>
+<table class="indextable">
+<tr><td class="module"><a href="Misc.html">Misc</a></td><td><div class="info">
+This module contains miscellaneous utilities.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Processing.html">Processing</a></td><td><div class="info">
+A simple task manager.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Errors.html">Errors</a></td><td><div class="info">
+<code class="code">handle f</code> runs <code class="code">f</code> and exits with exit status 0.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Positions.html">Positions</a></td><td><div class="info">
+Extension of standard library's positions.
+</div>
+</td></tr>
+<tr><td class="module"><a href="PrettyPrinter.html">PrettyPrinter</a></td><td><div class="info">
+This module provides a common formatting interface to 
+    pretty-print in LaTeX, raw text or module Format mode.
+</div>
+</td></tr>
+<tr><td class="module"><a href="InfiniteArray.html">InfiniteArray</a></td><td><div class="info">
+This module implements infinite arrays.
+</div>
+</td></tr>
+<tr><td class="module"><a href="Mark.html">Mark</a></td><td><div class="info">
+This module implements a very simple notion of ``mark''.
+</div>
+</td></tr>
+<tr><td class="module"><a href="IntRank.html">IntRank</a></td><td><div class="info">
+This module describes an ordered type <code class="code">t</code> equipped with a
+    distinguished constant <code class="code">none</code>.
+</div>
+</td></tr>
+</table>
+
+<p>
+
+<h2 id="compile">How to compile the source code ?</h2>
+<p>
+
+Decompress the distributed package. In the newly created folder, do:
+<pre class="verbatim"># ./configure</pre>
+<p>
+
+This should check if you have the necessary tools to compile <code class="code">mini</code>.
+Then, you just have to launch the compilation using:
+<p>
+
+<pre class="verbatim"># make</pre>
+<p>
+
+To generate this documentation, type the following command:
+<p>
+
+<pre class="verbatim"># make doc</pre>
+<p>
+
+Do not hesitate to contact us if the compilation process fails.
+<p>
+
+<h2 id="2_Options">Options</h2>
+<p>
+
+By default, <code class="code">mini</code> processes the following tasks:
+<ul>
+<li><b>parse-program</b>, parse the input file as a Mini program</li>
+<li><b>generate-constraint</b>, generate the typing constraint of this program</li>
+<li><b>solve-constraint</b>, solve this constraint</li>
+<li><b>print-env</b>, print the types of the toplevel definitions</li>
+</ul>
+
+<p>
+
+The following tasks are optional:
+<ul>
+<li><b>print-program</b>, pretty-print the parsed program</li>
+<li><b>parse-constraint</b>, parse the input file as a typing constraint not as 
+   a Mini program</li>
+<li><b>print-constraint</b>, print the typing constraint</li>
+</ul>
+
+<p>
+
+The options of <code class="code">mini</code> enable the use of these optional tasks:
+<p>
+
+<pre class="verbatim">usage: ./mini [options] filename
+  --start taskname             Task to begin with
+  --end taskname               Task to end with
+  --trace-all                  Trace
+  --do taskname                Do a task
+  --trace-solve-constraint     Trace solve-constraint
+  --trace-print-program        Trace print-program
+  --trace-generate-constraint  Trace generate-constraint
+  --trace-print-constraint     Trace print-constraint
+  --trace-parse-program        Trace parse-program
+  --trace-print-env            Trace print-env
+  --trace-parse-constraint     Trace parse-constraint
+  -help                        Display this list of options
+  --help                       Display this list of options</pre><br>
+</body>
+</html>
